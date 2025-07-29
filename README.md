@@ -12,16 +12,20 @@ The following results show the effect of applying **MINDiff** to a DreamBooth mo
 </p>
 
 Varying the value of λ controls the balance between subject fidelity and prompt alignment. Higher λ values lead to stronger suppression of subject influence, resulting in generations that more closely follow the input text prompt.
-![scale_comparison](https://github.com/user-attachments/assets/48dbe3da-0f50-46eb-9c67-ce370cfa89d8)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/48dbe3da-0f50-46eb-9c67-ce370cfa89d8" width="300"/>
+</p>
 
 ## Usage
 1. **Install PyTorch**
    This project was tested with the following PyTorch environment:
    - `torch==2.3.0`
    - `CUDA 11.8`
+   
    We recommend installing PyTorch using the official instructions:
-     👉 [Torch](https://pytorch.org/)
-2. **Clone the repository**
+
+   👉 [Torch](https://pytorch.org/)
+3. **Clone the repository**
 ```bash
 git clone https://github.com/seuleepy/MINDiff.git
 cd MINDiff
