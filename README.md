@@ -35,7 +35,7 @@ pip install -r requirements.txt
 Use any existing DreamBooth model. MINDiff has been tested on models fine-tuned with **Stable Diffusion 1.4**, **2.1**, and **SDXL + LoRA**.
 4. **Generate an image with MINDiff**
 Use the following command:
-```
+```bash
 bash inference.sh
 ```
 Before running the script, you need to provide the following arguments:
