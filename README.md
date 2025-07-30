@@ -26,20 +26,20 @@ Varying the value of λ controls the balance between subject fidelity and prompt
 
    👉 [Torch](https://pytorch.org/)
 3. **Clone the repository**
-```bash
-git clone https://github.com/seuleepy/MINDiff.git
-cd MINDiff
-pip install -r requirements.txt
-```
+   ```bash
+   git clone https://github.com/seuleepy/MINDiff.git
+   cd MINDiff
+   pip install -r requirements.txt
+   ```
 3. **Prepare a fine-tuned DreamBooth model**
-Use any existing DreamBooth model. MINDiff has been tested on models fine-tuned with **Stable Diffusion 1.4**, **2.1**, and **SDXL + LoRA**.
-4. **Generate an image with MINDiff**
-Use the following command:
-```bash
-bash inference.sh
-```
-Before running the script, you need to provide the following arguments:
-- `CUSTOM_MODEL_DIR`: Path to your fine-tuned DreamBooth model.
-- `modifier_token`: The token used during DreamBooth training (e.g., "sks")
-- `mask_token`: A token from your prompt used to guide mask generation via attention maps. It must be included in the prompt.
-- `attn_scale`: A float value that controls the strength of suppression. Higher values increases text alignment by reducing subject influence.
+   Use any existing DreamBooth model. MINDiff has been tested on models fine-tuned with **Stable Diffusion 1.4**, **2.1**, and **SDXL + LoRA**.
+5. **Generate an image with MINDiff**
+   Use the following command:
+   ```bash
+   bash inference.sh
+   ```
+   Before running the script, you need to provide the following arguments:
+   - `CUSTOM_MODEL_DIR`: Path to your fine-tuned DreamBooth model.
+   - `modifier_token`: The token used during DreamBooth training (e.g., "sks")
+   - `mask_token`: A token from your prompt used to guide mask generation via attention maps. It must be included in the prompt.
+   - `attn_scale`: A float value that controls the strength of suppression. Higher values increases text alignment by reducing subject influence.
